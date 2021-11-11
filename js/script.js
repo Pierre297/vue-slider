@@ -25,10 +25,27 @@ var carousel = new Vue ({
             },
             {
                 image: 'img/05.jpg',
-                title: 'Norvegia',
+                title: 'Hawai',
                 text: 'Lorem Ipsum'
-            }
+            },
         ], 
 
+    },
+    methods: {
+        nextSlide: function(){
+            if(this.activeSlide === this.slides.length - 1){
+            this.activeSlide = 0;
+            }else {
+                this.activeSlide ++;
+            }
+    },
+    prevslide: function(){
+        if(this.activeSlide == 0){
+            this.activeSlide = this.slides.length - 1;
+        }else {
+            
+        }
     }
+
+}
 });
