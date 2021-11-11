@@ -39,11 +39,11 @@ var carousel = new Vue ({
                 this.activeSlide ++;
             }
     },
-    prevslide: function(){
-        if(this.activeSlide == 0){
-            this.activeSlide = this.slides.length - 1;
-        }else {
-            
+        prevSlide: function(){
+            if(this.activeSlide == 0){
+                this.activeSlide = this.slides.length - 1;
+            }else {
+                this.activeSlide --;
         }
     }
 
