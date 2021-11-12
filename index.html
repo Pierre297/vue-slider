@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Vue Carousell</title>
   </head>
@@ -22,8 +29,12 @@
         </div>
       </div>
       <div class="thumbs">
-        <div class="prev" @click="prevSlide"></div>
-        <div class="next" @click="nextSlide"></div>
+        <div class="prev" @click="prevSlide">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="next" @click="nextSlide">
+          <i class="fas fa-chevron-down"></i>
+        </div>
         <div
           v-for="slide, i in slides  "
           class="thumb"
